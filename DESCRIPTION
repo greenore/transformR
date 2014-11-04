@@ -1,0 +1,12 @@
+Package: transformR
+Type: Package
+Title: transformR: A package to solve captcha codes
+Version: 0.1
+Date: 2014-02-26
+Author: Tim Hagmann <tim.hagmann@baloise.ch>
+Maintainer: Tim Hagmann <tim.hagmann@baloise.ch>
+Description: A tool to facilitate tranforming data.
+Depends:
+    R (>= 3.0.3)
+Roxygen: list(wrap = FALSE)
+License: file LICENSE

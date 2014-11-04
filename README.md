@@ -1,4 +1,6 @@
 transformR
-==========
+=============
 
-A small package with helper functions to transform data
+## Introduction
+
+transformR is an open source packages to help with data manipulation. 
