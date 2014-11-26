@@ -61,11 +61,21 @@ changeUmlaute <- function(charVector){
 #' @param charVector
 #' 
 
-changeLevels <- function(data, var, old_level, new_level){
-  old <- old_level
-  new <- new_level
-  levels(data[, var])[levels(data[, var]) == old] <- new
-  data[, var]
+changeLevels <- function(data, var_name, old_level, new_level){
+  
+  if(is.factor(data[, var_name])){
+    levels(data[, var_name])[levels(data[, var_name]) == old_level] <- new_level
+  }
+  
+if(is.character(data[, var_name])){
+    data[, var_name][data[, var_name] %in% c(old_level)] <- new_level
+  }
+
+if(is.numeric(data[, var_name])){
+    warning("Variable is numeric... \nNo transformation applied")
+  }
+
+  data[, var_name]
 }
 
 #' @title Transformation from factors to numeric variables
