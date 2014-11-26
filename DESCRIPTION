@@ -1,6 +1,6 @@
 Package: transformR
 Type: Package
-Title: transformR: A package to solve captcha codes
+Title: transformR: A package to help with data manipulation
 Version: 0.1
 Date: 2014-02-26
 Author: Tim Hagmann <tim.hagmann@baloise.ch>
